@@ -19,7 +19,6 @@ int main(){
         }
         sort(v.begin(),v.end());
         for(int i = 0 ; i < v.size()-1; i++){
-            if(v[i].length() > v[i+1].length()) continue;
             if(v[i+1].substr(0, v[i].length())== v[i]) flag = true;
         }
         if(flag) answer.emplace_back("NO");
