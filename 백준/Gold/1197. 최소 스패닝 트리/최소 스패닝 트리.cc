@@ -28,7 +28,7 @@ int find_root(int x){
 void union_root(int x, int y){
     x = find_root(x);
     y = find_root(y);
-    if(x != y)root[y] = x;
+    if(x != y)root[x] = y;
 }
 
 void kruskal(){
