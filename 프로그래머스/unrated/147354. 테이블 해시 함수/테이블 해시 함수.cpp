@@ -22,7 +22,7 @@ int solution(vector<vector<int>> data, int col, int row_begin, int row_end) {
         for(int j= 0 ; j < data[0].size(); j++){
             sum += (data[i][j]%mod);
         }
-        xorSum = sum ^ xorSum;
+        xorSum ^= sum;
     }
     return xorSum;
 }
